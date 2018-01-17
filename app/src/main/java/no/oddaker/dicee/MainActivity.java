@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 Random randomNumerGenerator = new Random();
                 int number = randomNumerGenerator.nextInt(6);
                 leftDice.setImageResource(dicearray[number]);
-
+                Log.d("Dicee", "The number is : " + (number+1));
                 number=randomNumerGenerator.nextInt(6);
                 rightDice.setImageResource(dicearray[number]);
 
-                Log.d("Dicee", "The number is : " + number);
+                Log.d("Dicee", "The number is : " + (number+1));
             }
         });
 
